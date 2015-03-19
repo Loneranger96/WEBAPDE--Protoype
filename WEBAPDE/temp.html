@@ -54,9 +54,9 @@
             <div class="nav-wrapper fixed blue-grey nav-div darken-3">
                 <div class="row">
                     <div class="col s2" style="padding-top: 5px;">
-                        <h5>Joined Sessions</h5>
+                        <h5>Request Session</h5>
                     </div>
-                    <div class="input-field blue-grey darken-4 col s3">
+                    <div class=" hidden input-field blue-grey darken-4 col s3">
                         <input id="search" type="text" required>
                         <label for="search"><i class="small mdi-action-search"></i></label>
                     </div>
@@ -78,53 +78,81 @@
         </nav>	
 
         <div class="contentdiv">
-            <div id= "scrollable-panel" class="row">
-                <!-- card start -->
-                   <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000001</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">OPERSYS <div class="progress">
-      <div class="determinate background-color orange" style="width: 33.33%"></div>
-  </div></span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Topic</span><span class="badge">Interrupts</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Tutor</span><span class="badge">Solomon See</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Date</span><span class="badge">April 10, 2015</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Time</span><span class="badge">4:30PM - 6:00PM</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Venue</span><span class="badge">G201</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Slots</span><span class="badge">10/30</span></a>
+			<div class = "row">
+				<div class = "scrollable-panel">
+				<div class = "col s3">
+            
+                  <ul id = "requestsessionfunction" class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header blue-grey darken-3 white-text right-panel-collapsable"><i class="mdi-image-filter-drama"></i>Subject</div>
+                        <div class="collapsible-body">
+                        <nav>
+                            <div class="nav-wrapper  blue-grey darken-3">
+                              <form>
+                                <div class="input-field">
+                                  <input id="search" type="text" required>
+                                  <label for="search"><i class="mdi-action-search"></i></label>
+                                </div>
+                              </form>
+                            </div>
+                          </nav>
+                        </div>
+                        <div id = "collapsible-elements" class="collapsible-body  blue-grey darken-3">
+                            <ul class="row">
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OPERSYS</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">WEBAPDE</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DISCTRU</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">SPSWENG</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">NETWORK</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OBJECTP</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">INTRODB</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DASALGO</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO1</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO2</li>
                             </ul>
                         </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn orange white-text" onclick="toast('<span>Left Session #000001 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-navigation-close left"></i>Leave Session</a>
-                        </div>
-                      </div>
-                    </div>  
 
-                    <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000002</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">WEBAPDE<div class="progress">
-      <div class="determinate background-color orange" style="width: 66.66%"></div>
-  </div></span>
-                            <ul class="collection grey lighten-3 card-custom-text">
-                                <a class="collection-item"><span class = "blue-grey-text">Topic</span><span class="badge">Servlet Programming</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Tutor</span><span class="badge">Art Caronongan</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Date</span><span class="badge">April 10, 2015</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Time</span><span class="badge">4:30PM - 6:00PM</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Venue</span><span class="badge">G301</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">Slots</span><span class="badge">20/30</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn orange white-text" onclick="toast('<span>Left Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-navigation-close left"></i>Leave Session</a>
-                        </div>
-                      </div>
-                    </div> 
+                    </li>
+
+                  </ul>
+					 <span class = " hidden"> HI !</span>
+				</div>
+                
+
+				<div class="col s9">
+                <!-- card start -->
+                <div class="card blue-grey darken-3 rounded-card">
+				<div class="card-content white-text">
+				  <span class="card-title">WEBAPDE</span>
+				</div>
+				<div class="card-action grey lighten-3 rounded-card-bot">
+					<div class="row">
+						<form class="s12">
+							<div class="input-field col s12 ">
+							<i class="mdi-communication-messenger prefix "></i>
+							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<label for="textarea1">Topic/Description</label>
+							</div>
+							
+						</form>
+					</div>
+					<div class="row">
+							<div class="col s4 hidden">h</div>
+							<div class="col s4 hidden">g</div>
+							<div class="col s4"><a href = "create_sessions.html" class="right session-button btn teal accent-4 white-text"><i class="mdi-action-note-add left"></i>Request Session</a></div>
+
+						
+					</div>
+
+                
+            <!-- -->
+					</div>
+					</div>
                 <!-- Card end --> 
             </div>
+				</div>
+			</div>
+
         </div>
     </body>
     

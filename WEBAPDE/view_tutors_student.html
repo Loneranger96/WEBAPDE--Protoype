@@ -10,161 +10,376 @@
         <script src = "js/materialize.min.js"></script>
     </head>
     <body>
+		<!--<ul id='dropdown1' class='dropdown-content'>
+			<li><a href="#!">ID</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">Subject</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">Topic</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">Tutor</a></li>
+		</ul>-->
         
-        <ul class="side-nav fixed navigation-size blue-grey darken-4 light">
-              <div class="side-format">
-                  <div class="center">
-                     <a href = "#!" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Home"><img src = "assets/senpai-transparent.png" width = 75 height = 75/></a>
-					 <li class="divider"></li>
-					  <h5 class = "custom-side-text-header white-text">Student</h5>
-                    <a href = "view_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="View Sessions"><i class="medium mdi-action-aspect-ratio light white-text"></i></a>
-                    <a href = "view_tutors_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="View Tutors"><i class="medium mdi-action-assignment-ind light white-text"></i></a>
-					  <a href = "joined_sessions_students.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Joined Sessions"><i class="medium  mdi-action-dns light white-text"></i></a>
-                     <a href = "request_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Request Sessions"><i class="medium mdi-action-description light white-text"></i></a>
-					 <li class="divider"></li>
-					  <h5 class = "custom-side-text-header white-text">Tutor</h5>
-					 <a href = "session_requests_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Session Requests"><i class="medium  mdi-action-class light white-text"></i></a>
-                     <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Create Session"><i class="medium mdi-action-event light white-text"></i></a>
-                 </div>
-				 
-				 <div class = "bottom-side-bar">
-				   <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Preferences"><i class="medium mdi-action-settings light white-text"></i></a>
-                 </div>
-				 </div>
-<!--
-                  
-                      <img src = "assets/Execute.jpg" class = "side-profile "/>
-                            <h5 class="orange-text">The Dictator</h5>
-                      
-                  
--->
-                    <li class="no-padding">
-                         
-                         
-<!--
-              <ul class="collapsible collapsible-accordion side-bar menu-format " style="display:block ">
-                <li class="bold" white-text><a class="collapsible-header waves-effect waves-teal">Student</a>
-                  <div class="collapsible-body">
-                    <ul class = "menu-format">
-                      <li><a href="#">View Sessions</a></li>
-                      <li><a href="view_tutors.html">View Tutors</a></li>
-                      <li><a href="joined_sessions.html">Joined Sessions</a></li>
-                      <li><a href="request_sessions.html">Request Sessions</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="bold"><a class="collapsible-header waves-effect waves-teal">Tutor</a>
-                  <div class="collapsible-body" style="">
-                    <ul>
-                       <li><a href="create_sessions.html">Create Session</a></li>
-                       <li><a href="session_requests.html">Session Requests</a></li>
-                    </ul>
-                  </div>
-                </li>
-                  <li class="bold"><a href="edit_profile.html" class="collapsible-header waves-effect waves-teal">Edit Profile</a></li>
-              </ul>
--->
-                </li>
-            </div>  
-        </ul>
-    
-        <ul id="dropdownProfile" class="dropdown-content ">
-          <li><a href="#!" class="blue-grey-text text-darken-3">View Profile</a></li>
-          <li class="divider"></li>
-          <li><a href="#!" class="blue-grey-text text-darken-3">Sign Out</a></li>
-        </ul>
+<!--        <div class="background-image"><img src="assets/Wood.jpg"/></div>-->
         
-        <div class = "transparent-header no-padding one-edge-shadow">
-            <div class = "row">
-                <div class = "col s3"><span class = "transparent-header-text blue-grey-text text-darken-3 left">View Tutors</span></div>
-                <div class = "col s6"><span class = "transparent-header-text blue-grey-text text-darken-3 hidden">View Tutors</span></div>
-                <div class = "col s3">
-                    <div class = "center">
-                       <a class="dropdown-button transparent-header-text blue-grey-text text-darken-3" data-activates="dropdownProfile" href="#!">Gio Anton Velez <i class = "small mdi-action-account-circle blue-grey-text text-darken-3"></i></a>
+        <ul class="side-nav navigation-size fixed blue-grey darken-4 light">
+            <div class="side-format">
+                <div class="center">
+                    <a href = "#!" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Home"><img src = "assets/senpai-transparent.png" width = 50 height = 50/></a>
+				    <li class="divider"></li>
+				    <h6 class = "white-text">Student</h6>
+                    <a href = "view_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="View Sessions"><i class="small mdi-action-aspect-ratio light white-text"></i></a>
+                    <a href = "view_tutors_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="View Tutors"><i class="small mdi-action-assignment-ind light white-text"></i></a>
+				    <a href = "joined_sessions_students.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Joined Sessions"><i class="small  mdi-action-dns light white-text"></i></a>
+                    <a href = "request_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Request Sessions"><i class="small mdi-action-description light white-text"></i></a>
+				    <li class="divider"></li>
+				    <h6 class = "white-text">Tutor</h6>
+				    <a href = "session_requests_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Session Requests"><i class="small mdi-action-class light white-text"></i></a>
+                    <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Create Session"><i class="small mdi-action-event light white-text"></i></a>
+                    <div class = "bottom-side-bar">
+				        <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="1" data-tooltip="Preferences"><i class="small mdi-action-settings light white-text"></i></a>
                     </div>
                 </div>
-                
             </div>
-        </div>
-    <div class="centerdiv">
-       
+        </ul>
+		
+        <ul id="dropdownProfile" class="dropdown-content">
+            <li><a href="#!" class="blue-grey-text text-darken-3">View Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="blue-grey-text text-darken-3">Sign Out</a></li>
+        </ul>
         
-        <div class = "row position-container">
-            <div class="col s3">
-                  <ul id = "requestsessionfunction" class="collapsible" data-collapsible="accordion">
-                    <li>
-                      <div class="collapsible-header blue-grey darken-3 white-text right-panel-collapsable"><i class="mdi-image-filter-drama"></i>Subject</div>
-                        <div class="collapsible-body">
-                        <nav>
-                            <div class="nav-wrapper  blue-grey darken-3">
-                              <form>
-                                <div class="input-field">
-                                  <input id="search" type="text" required>
-                                  <label for="search"><i class="mdi-action-search"></i></label>
-                                </div>
-                              </form>
-                            </div>
-                          </nav>
+		<!-- START NAV BAR-->
+        <nav class="fixed-nav">
+            <div class="nav-wrapper fixed blue-grey nav-div darken-3">
+                <div class="row">
+                    <div class="col s2" style="padding-top: 5px;">
+                        <h5>View Tutors</h5>
+                    </div>
+                    <div class="input-field blue-grey darken-4 col s3">
+                        <input id="search" type="text" required>
+                        <label for="search"><i class="small mdi-action-search"></i></label>
+                    </div>
+                    <div class="col s4">
+                        <ul class="tabs">
+                            <li class="tab blue-grey darken-3 "><a class="active" href="#test21">ID</a></li>
+                            <li class="tab blue-grey darken-3"><a href="#test2">Subject</a></li>
+                            <li class="tab blue-grey darken-3"><a href="#test3">Topic</a></li>
+                            <li class="tab blue-grey darken-3"><a href="#test4">Tutors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <div class="floatright">
+                            <a class="dropdown-button transparent-header-text white-text" data-activates="dropdownProfile" href="#!">Gio Anton Velez<i class = "small mdi-action-account-circle"></i></a>
                         </div>
-                        <div id = "collapsible-elements" class="collapsible-body  blue-grey darken-3">
-                            <ul class="row">
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OPERSYS</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">WEBAPDE</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DISCTRU</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">SPSWENG</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">NETWORK</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OBJECTP</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">INTRODB</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DASALGO</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO1</li>
-                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO2</li>
+                    </div>
+                </div>
+            </div>
+        </nav>	
+
+        <div class="contentdiv">
+            <div id= "scrollable-panel" class="row">
+				
+				<!-- Card Start -->
+				  <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000001</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Art Caronongan</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">32</span></a>
                             </ul>
                         </div>
-
-                    </li>
-                    <li>
-                      <div class="collapsible-header  blue-grey darken-3 white-text right-panel-collapsable"><i class="mdi-maps-place"></i>Tutors</div>
-                        <div class="collapsible-body">
-                        <nav>
-                            <div class="nav-wrapper  blue-grey darken-3">
-                              <form>
-                                <div class="input-field">
-                                  <input id="search" type="text" required>
-                                  <label for="search"><i class="mdi-action-search"></i></label>
-                                </div>
-                              </form>
-                            </div>
-                          </nav>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
                         </div>
-                        <div id = "collapsible-elements" class="collapsible-body  blue-grey darken-3">
-                            <div class = "row">
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light ">Art Caronongan</div>
-
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Luis Camara Dery</div>
-
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Ethel Ong</div>
-
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Marc San Pedro</div>
-
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Dennis Erasga</div>
-
-                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
-                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Briane Samson</div>
-                            </div>
+                      </div>
+                    </div>  
+				<!-- Card End -->
+				
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000002</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Solomon See</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">14</span></a>
+                            </ul>
                         </div>
-                    </li>
-                  </ul>
-                 <span class = " hidden"> HI !</span>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000003</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Ethel Ong</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">72</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000004</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Derek Banas</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST, CULINARY ARTS</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">12</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                          <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000005</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Briane Samson</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">22</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000005"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--                    Card Start-->
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000006</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Marc San Pedro</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS IMBA</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">69</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                            <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000006"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--					Card End-->
+					<!-- Card Start -->
+				  <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000001</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Art Caronongan</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">32</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+				<!-- Card End -->
+				
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000002</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Solomon See</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">14</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000003</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Ethel Ong</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">72</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000004</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Derek Banas</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST, CULINARY ARTS</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">12</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                          <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000005</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Briane Samson</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">22</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000005"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--                    Card Start-->
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000006</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Marc San Pedro</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS IMBA</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">69</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                            <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000006"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--					Card End-->
+				
+				<!-- Card Start -->
+				  <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000001</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Art Caronongan</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">32</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+				<!-- Card End -->
+				
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000002</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Solomon See</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">14</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000003</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Ethel Ong</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">72</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000004</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Derek Banas</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST, CULINARY ARTS</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">12</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                          <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000005</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Briane Samson</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">22</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000005"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--                    Card Start-->
+                     <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                          <span class="card-title right session-id orange-text">#000006</span>
+                        <div class="card-content white-text">
+                          <span class="card-title">Marc San Pedro</span>
+                            <ul class="collection grey lighten-3">
+                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS IMBA</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">69</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                            <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000006"><i class="mdi-action-credit-card left"></i>View Details</a>
+                        </div>
+                      </div>
+                    </div>  
+<!--					Card End-->
+				
             </div>
-        <div class="col s9">
-            
-
-            <!-- Modal Structure -->
+        </div>
+		
+		<!-- Modal Structure -->
             <div id="modal_000001" class="modal modal-fixed-footer">
                 <div class="modal-content blue-grey darken-4 white-text modal-top">
                     <div class = "row">
@@ -241,134 +456,13 @@
                 </div>
             </div>
           
-          
-            
-            <div class = "row">
-                <div id= "scrollable-panel" class = "col s12">
-    <!--
-                <form> 
-                    <div class="input-field col s6" style = "padding-right: 100px">
-                        <input id="search" type="text" required>
-                        <label for="search"><i class="mdi-action-search"></i></label>
-                    </div>blue-grey
-                </form>
-    -->
-                   <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000001</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Art Caronongan</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">32</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-
-                    <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000002</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Solomon See</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">14</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-
-                    <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000003</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Ethel Ong</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">72</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn teal accent-4 white-text" onclick="toast('<span>Joined Session #000002 </span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-                    
-                     <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000004</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Derek Banas</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST, CULINARY ARTS</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">12</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                          <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000001"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-                    
-                     <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000005</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Briane Samson</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS CS-ST</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">22</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                           <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000005"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-                    
-                     <div class="col s4">
-                      <div class="card blue-grey darken-3 rounded-card">
-                          <span class="card-title right session-id orange-text">#000006</span>
-                        <div class="card-content white-text">
-                          <span class="card-title">Marc San Pedro</span>
-                            <ul class="collection grey lighten-3">
-                              <a class="collection-item"><span class = "blue-grey-text">Course</span><span class="badge">BS IMBA</span></a>
-                                <a class="collection-item"><span class = "blue-grey-text">No. of Sessions</span><span class="badge">69</span></a>
-                            </ul>
-                        </div>
-                        <div class="card-action blue-grey darken-3 rounded-card-bot">
-                            <a class="session-button btn teal accent-4 white-text modal-trigger" href="#modal_000006"><i class="mdi-action-credit-card left"></i>View Details</a>
-                        </div>
-                      </div>
-                    </div>  
-
-                
-            <!-- -->
-                    </div>
-                </div>
-            </div>
-            </div>  
-        </div>
     </body>
     
     <script type = "text/javascript">
         
          $(document).ready(function(){
             $('.collapsible').collapsible();
-        });
-        
-          $(document).ready(function(){
-            $('.collapsible').sideNav("show");
-        });
-          $(document).ready(function(){
-            $('.collapsible').sideNav("hide");
+		 	$(".button-collapse").sideNav();
         });
         
 //      var options = [
