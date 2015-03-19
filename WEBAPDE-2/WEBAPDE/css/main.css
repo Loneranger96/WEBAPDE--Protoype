@@ -1,0 +1,375 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+/*
+    background: url(Wood.jpg) no-repeat center center fixed;
+    background-size: cover;
+*/
+    background: #e8e8e8;
+}
+
+.contentdiv
+{
+    min-width: 1200px !important;
+    padding-left: 80px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.floatleft
+{
+    float: left;
+}
+
+.floatright
+{
+    float: right;
+}
+
+.background-image{
+	position: fixed;
+	opacity: 0.9;
+}
+
+.sessioncards {
+    background: #710202 !important;   
+}
+
+#searchbar{
+    background-color: #0f670f;  
+}
+
+#dropdownicon{
+    font-size: 3rem;
+}
+
+#username{
+    font-size: 20px;   
+}
+
+#content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#subheader{
+    margin-top: 50px;   
+}
+
+#side-elements {
+    padding: 20px 0px;   
+}
+
+#modal-row {
+    background-color: inherit;
+}
+
+.subject-buttons {
+    padding-left: 2px;
+    padding-right: 2px;
+    opacity: 0.7;
+}
+
+.subject-buttons:hover {
+    opacity: 1;
+}
+
+.side-buttons {
+    margin: 2px 2px;
+ 
+}
+.side-profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+#leftPanel {
+    background: #3eb6e2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+#collapsible-elements {
+    padding: 5px 5px;   
+}
+
+
+.orange {
+    @extend .orange;    
+}
+
+.white {
+    @extend .white;   
+}
+
+.session-button {
+    font-size: 12px !important;
+    color: white;
+    opacity: 0.9;
+}
+
+
+.session-button:hover {
+    opacity: 1;
+    
+}
+
+.header-top {  
+    position: relative;
+    margin-top: -35px;
+    margin-top: 20px;
+}
+.sidebar {
+    padding-top: 50px;
+}
+
+.centerdiv {
+    min-width: 1080px;
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 5%;
+    padding-top: 8%;
+}
+
+.cardContainer {
+    
+}
+
+
+
+.center-wrapper {
+    border-color: orange;   
+}
+
+.header-text {
+    padding-left: 10px;
+    font-size: 40px;
+}
+
+.onTop {
+    position: relative;
+    z-index: 999;
+}
+
+.side-bar {
+    height: 100%;
+}
+
+.fixed
+{
+    position: fixed;
+}
+
+.card-container {
+    position: fixed;
+}
+
+.left-panel {
+    float: left;
+    position: fixed;
+    overflow: hidden;
+}
+
+.side-format {
+    padding-top: 10%;
+}
+
+.menu-format {
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.navigation-size {
+    width: 80px !important;
+    background-color: #403f3d !important;
+
+}
+
+
+
+
+
+.hoverable-icon {
+    opacity: 0.8;   
+}
+
+.hoverable-icon:hover{
+    opacity: 1;
+}
+
+.transparent-header {
+    padding-left: 7%;
+    padding-top: 0;
+    margin-top: 0;
+	margin-bottom: 20px;
+    position: fixed;
+    height: 4.2em;
+    background-color: #e8e8e8 ;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.transparent-header-text {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.fill {
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0.0;
+}
+
+#requestsessionfunction {
+    position: fixed;
+    width: 20%;
+}
+
+.card-custom-text {
+    
+}
+
+.tutor-buttons {
+    opacity: 0.7;
+}
+
+.tutor-buttons:hover {
+    opacity: 1;   
+}
+
+.session-id {
+    margin-right: 1em !important;
+    margin-top: 1em !important;
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 8px 2px -6px #263238;
+	   -moz-box-shadow: 0 8px 2px -6px #263238;
+	        box-shadow: 0 8px 2px -6px #263238;
+}
+
+.transparent-header-icon {
+    padding-top: 5px;
+}
+
+#dropdownProfile {
+    margin-top: 3em !important;
+}
+
+.position-container {
+   
+}
+
+.rounded-card {
+    border-radius: 8px !important;
+}
+
+.rounded-card-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.rounded-card-bot {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.modal-pic {
+    border-radius: 100px;
+}
+
+.modal-body {
+    position: relative;
+    max-height: 1000px;
+    overflow-y: auto;
+    padding-top: 32%;
+}
+
+.modal-top {
+	position: realtive;
+
+}
+
+ ongoing{
+       content: "ongoing" !important
+ }
+
+.modal-footer-custom {
+    position: sticky !important;
+}
+
+#bottom {
+    padding-top: 50%;
+}
+
+.top-side-bar {
+    
+}
+
+.bottom-side-bar {
+	padding-top: 7em;
+}
+
+
+
+.custom-side-text-header {
+	font-size: 24px !important;
+}
+
+#requeset-search-mid {
+	
+}
+
+#request-search-mid {
+	width:106%;
+}
+
+.side-filter {
+	width: 100%;
+}
+
+.custom-button-display {
+	width: 100%;
+	text-align: center;
+}
+
+.side-header {
+	font-size: 30px !important;
+	min-width: 300px;
+}
+
+.search {
+	min-width: 300px;
+}
+
+.filter-tabs {
+	min-width: 380px;
+}
+
+.username-tab {
+	min-width: 190px;
+	font-size: 25px;
+}
+
+.absolute {
+	position: fixed !important;
+}
+
+.main-fixed {
+	position:fixed;
+}
+
+.nav-div {
+    min-width: 1200px !important;
+    margin: 0 auto !important;
+    padding-left: 80px !important;
+}

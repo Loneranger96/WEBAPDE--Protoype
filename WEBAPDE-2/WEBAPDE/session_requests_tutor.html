@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sessions with Senpai</title>
+        <link rel = "stylesheet" type="text/css" href="css/main.css">
+        <link rel = "stylesheet" type="text/css" href="css/materialize.css">
+        <link rel = "stylesheet" type="text/css" href="css/materialize.min.css">
+        <script src = "js/jquery.js"></script>
+        <script src = "js/materialize.js"></script>
+        <script src = "js/materialize.min.js"></script>
+    </head>
+    <body>
+        
+        <ul class="side-nav fixed navigation-size blue-grey darken-4 light">
+             <div class="side-format">
+                  <div class="center">
+                     <a href = "#!" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Home"><img src = "assets/senpai-transparent.png" width = 75 height = 75/></a>
+					 <li class="divider"></li>
+					  <h5 class = "custom-side-text-header white-text">Student</h5>
+                    <a href = "view_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="View Sessions"><i class="medium mdi-action-aspect-ratio light white-text"></i></a>
+                    <a href = "view_tutors_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="View Tutors"><i class="medium mdi-action-assignment-ind light white-text"></i></a>
+					  <a href = "joined_sessions_students.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Joined Sessions"><i class="medium  mdi-action-dns light white-text"></i></a>
+                     <a href = "request_sessions_student.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Request Sessions"><i class="medium mdi-action-description light white-text"></i></a>
+					 <li class="divider"></li>
+					  <h5 class = "custom-side-text-header white-text">Tutor</h5>
+					 <a href = "session_requests_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Session Requests"><i class="medium  mdi-action-class light white-text"></i></a>
+                     <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Create Session"><i class="medium mdi-action-event light white-text"></i></a>
+                 </div>
+				 
+				 <div class = "bottom-side-bar">
+				   <a href = "create_sessions_tutor.html" class="hoverable-icon blue-grey darken-4 waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Preferences"><i class="medium mdi-action-settings light white-text"></i></a>
+                 </div>
+				 </div>
+<!--
+                  
+                      <img src = "assets/Execute.jpg" class = "side-profile "/>
+                            <h5 class="orange-text">The Dictator</h5>
+                      
+                  
+-->
+                    <li class="no-padding">
+                         
+                         
+<!--
+              <ul class="collapsible collapsible-accordion side-bar menu-format " style="display:block ">
+                <li class="bold" white-text><a class="collapsible-header waves-effect waves-teal">Student</a>
+                  <div class="collapsible-body">
+                    <ul class = "menu-format">
+                      <li><a href="#">View Sessions</a></li>
+                      <li><a href="view_tutors.html">View Tutors</a></li>
+                      <li><a href="joined_sessions.html">Joined Sessions</a></li>
+                      <li><a href="request_sessions.html">Request Sessions</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="bold"><a class="collapsible-header waves-effect waves-teal">Tutor</a>
+                  <div class="collapsible-body" style="">
+                    <ul>
+                       <li><a href="create_sessions.html">Create Session</a></li>
+                       <li><a href="session_requests.html">Session Requests</a></li>
+                    </ul>
+                  </div>
+                </li>
+                  <li class="bold"><a href="edit_profile.html" class="collapsible-header waves-effect waves-teal">Edit Profile</a></li>
+              </ul>
+-->
+                </li> 
+        </ul>
+    
+        <ul id="dropdownProfile" class="dropdown-content ">
+          <li><a href="#!" class="blue-grey-text text-darken-3">View Profile</a></li>
+          <li class="divider"></li>
+          <li><a href="#!" class="blue-grey-text text-darken-3">Sign Out</a></li>
+        </ul>
+        
+        <div class = "transparent-header no-padding one-edge-shadow">
+            <div class = "row">
+                <div class = "col s3"><span class = "transparent-header-text blue-grey-text text-darken-3 left">Session Requests</span></div>
+                <div class = "col s6"><span class = "transparent-header-text blue-grey-text text-darken-3 hidden">Session Requests</span></div>
+                <div class = "col s3">
+                    <div class = "center">
+                       <a class="dropdown-button transparent-header-text blue-grey-text text-darken-3" data-activates="dropdownProfile" href="#!">Gio Anton Velez <i class = "small mdi-action-account-circle blue-grey-text text-darken-3"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    <div class="centerdiv">
+       
+        
+        <div class = "row position-container">
+            <div class="col s3">
+               
+                  <ul id = "requestsessionfunction" class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header blue-grey darken-3 white-text right-panel-collapsable"><i class="mdi-image-filter-drama"></i>Subject</div>
+                        <div class="collapsible-body">
+                        <nav>
+                            <div class="nav-wrapper  blue-grey darken-3">
+                              <form>
+                                <div class="input-field">
+                                  <input id="search" type="text" required>
+                                  <label for="search"><i class="mdi-action-search"></i></label>
+                                </div>
+                              </form>
+                            </div>
+                          </nav>
+                        </div>
+                        <div id = "collapsible-elements" class="collapsible-body  blue-grey darken-3">
+                            <ul class="row">
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OPERSYS</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">WEBAPDE</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DISCTRU</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">SPSWENG</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">NETWORK</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">OBJECTP</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">INTRODB</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">DASALGO</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO1</li>
+                                <li class = "col s12 subject-buttons btn teal accent-4 waves-effect waves-light btn white-text">COMPRO2</li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                      <div class="collapsible-header  blue-grey darken-3 white-text right-panel-collapsable"><i class="mdi-maps-place"></i>Tutors</div>
+                        <div class="collapsible-body">
+                        <nav>
+                            <div class="nav-wrapper  blue-grey darken-3">
+                              <form>
+                                <div class="input-field">
+                                  <input id="search" type="text" required>
+                                  <label for="search"><i class="mdi-action-search"></i></label>
+                                </div>
+                              </form>
+                            </div>
+                          </nav>
+                        </div>
+                        <div id = "collapsible-elements" class="collapsible-body  blue-grey darken-3">
+                            <div class = "row">
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light ">Art Caronongan</div>
+
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Luis Camara Dery</div>
+
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Ethel Ong</div>
+
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Marc San Pedro</div>
+
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Dennis Erasga</div>
+
+                                <div class = "col s3 center"><i class="mdi-action-account-circle white-text"></i></div> 
+                                <div class = "col s9 btn tutor-buttons teal accent-4 waves-effect waves-light">Briane Samson</div>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                 <span class = " hidden"> HI !</span>
+            </div>
+        <div class="col s9">
+            <div class = "row">
+                <div id= "scrollable-panel" class = "col s12">
+    <!--
+                <form> 
+                    <div class="input-field col s6" style = "padding-right: 100px">
+                        <input id="search" type="text" required>
+                        <label for="search"><i class="mdi-action-search"></i></label>
+                    </div>blue-grey
+                </form>
+    -->
+                   <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                        <div class="card-content white-text">
+                          <span class="card-title">OPERSYS</span>
+                            <ul class="collection grey lighten-3">
+								 <a class="collection-item"><span class = "blue-grey-text">Topic</span><span class="badge">Servlet Programming</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Date</span><span class="badge">April 10, 2015</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Time</span><span class="badge">4:30PM - 6:00PM</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Venue</span><span class="badge">G301</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Requests</span><span class="badge">10</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                          <a href = "create_sessions.html" class="session-button btn teal accent-4 white-text"><i class="mdi-content-add left"></i>Create Session</a>
+                        </div>
+                      </div>
+                    </div>  
+
+                    <div class="col s4">
+                      <div class="card blue-grey darken-3 rounded-card">
+                        <div class="card-content white-text">
+                          <span class="card-title">WEBAPDE</span>
+                            <ul class="collection grey lighten-3 card-custom-text">
+                              								 <a class="collection-item"><span class = "blue-grey-text">Topic</span><span class="badge">CSS & HTML Programming</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Date</span><span class="badge">April 10, 2015</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Time</span><span class="badge">4:30PM - 6:00PM</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Venue</span><span class="badge">G304</span></a>
+                                <a class="collection-item"><span class = "blue-grey-text">Requests</span><span class="badge">10</span></a>
+                            </ul>
+                        </div>
+                        <div class="card-action blue-grey darken-3 rounded-card-bot">
+                           <a href = "create_sessions.html" class="session-button btn teal accent-4 white-text"><i class="mdi-content-add left"></i>Create Session</a>
+                        </div>
+                      </div>
+                    </div>  
+
+                
+            <!-- -->
+                    </div>
+                </div>
+            </div>
+            </div>  
+        </div>
+    </body>
+    
+    <script type = "text/javascript">
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
+        
+          $(document).ready(function(){
+            $('.collapsible').sideNav("show");
+        });
+          $(document).ready(function(){
+            $('.collapsible').sideNav("hide");
+        });
+        
+//      var options = [
+//        {selector: '.card', offset: 200, callback: 'globalFunction()' },
+//      ];
+//      scrollFire(options);
+        
+        $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+        
+        $('.right-panel-collapsable').click(function(){
+              $(".right-panel-collapsable").removeClass("blue-grey darken-2 ").addClass(" blue-grey darken-3"); // remove the prev pressed button class
+              $(this).removeClass(" blue-grey darken-3").addClass("blue-grey darken-2");  
+        });
+        
+         $(document).ready(function(){
+            $('#modal1').closeModal();
+          });
+        
+        $(document).ready(function(){
+            $(".dropdown-button").dropdown({ hover: false });
+        });
+        
+        
+
+        
+
+        
+      
+      
+    </script>
+
+</html>

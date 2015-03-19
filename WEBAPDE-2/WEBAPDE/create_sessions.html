@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sessions with Senpai</title>
+        <link rel = "stylesheet" type="text/css" href="css/main.css">
+        <link rel = "stylesheet" type="text/css" href="css/materialize.css">
+        <link rel = "stylesheet" type="text/css" href="css/materialize.min.css">
+        <script src = "js/jquery.js"></script>
+        <script src = "js/materialize.js"></script>
+        <script src = "js/materialize.min.js"></script>
+    </head>
+    <body> 
+        
+        <nav>
+            <div class="nav-wrapper blue-grey">
+                
+<!--
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                </ul>
+-->
+            </div>
+        </nav>
+         <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn left blue-grey">
+                     <i class="medium mdi-navigation-menu">
+                     </i>
+                </a>
+       
+         <ul id="slide-out" class="side-nav fixed blue-grey">
+             
+                    <div class = "center"><img src = "assets/Marc.jpg" class = "side-profile"/></div>
+                    <div class = "center white-text">Marc San Pedro</div>
+             
+<!--
+                <div style = "col s12">
+                    <ul id = "side-elements">
+                        <li><a class="waves-effect waves-light btn orange white-text"><i class="mdi-file-cloud left"></i>Request Session</a></li>
+                        <li><a class="waves-effect waves-light btn orange white-text"><i class="mdi-file-cloud left"></i>View Sessions</a></li>
+                        <li><a class="waves-effect waves-light btn orange white-text"><i class="mdi-file-cloud left"></i>View Tutors</a></li>
+                        <li><a class="waves-effect waves-light btn orange white-text"><i class="mdi-file-cloud left"></i>Joined Sessions</a></li>
+                        <li><a class="waves-effect waves-light btn orange white-text"><i class="mdi-file-cloud left"></i>Evaluate Sessions</a></li>
+                    </ul>
+                </div>
+-->
+             
+<!--
+        <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
+            <object id="front-page-logo" type="image/svg+xml" data="https://cdn.goodwillwa.org/vendor/materialize/0.95.1/res/materialize.svg">Your browser does not support SVG</object></a></li>
+-->
+<!--
+        <li class="bold active"><a href="./About - Materialize_files/About - Materialize.html" class="waves-effect waves-teal">About</a></li>
+        <li class="bold"><a href="https://cdn.goodwillwa.org/vendor/materialize/0.95.1/getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+-->
+             
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">Student</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                  <li><a href="view_sessions.html">View Sessions</a></li>
+                  <li><a href="view_tutors.html">View Tutors</a></li>
+                  <li><a href="joined_sessions.html">Joined Sessions</a></li>
+                  <li><a href="#">Request Sessions</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">Tutor</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                  <li><a href="#">Create Session</a></li>
+                  <li><a href="session_requests.html">Session Requests</a></li>
+                </ul>
+              </div>
+            </li>
+              <li class="bold"><a href="edit_profile.html" class="collapsible-header waves-effect waves-teal">Edit Profile</a>  </li>
+          </ul>
+      
+      </ul>
+        
+         <div class = "row header-top"> 
+           <nav>
+            <div class="nav-wrapper teal">
+                <h1 class = "header-text">Create a Session</h1>
+            </div>
+        </nav>
+        </div>
+        
+        <div class="centerdiv">
+        <div class = "row">
+        <div class="col s3">
+              <ul id = "requestsessionfunction" class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header teal white-text"><i class="mdi-image-filter-drama"></i>Subject</div>
+                    <div class="collapsible-body">
+                    <nav>
+                        <div class="nav-wrapper blue-grey">
+                          <form>
+                            <div class="input-field">
+                              <input id="search" type="text" required>
+                              <label for="search"><i class="mdi-action-search"></i></label>
+                            </div>
+                          </form>
+                        </div>
+                      </nav>
+                    </div>
+                    <div id = "collapsible-elements" class="collapsible-body blue-grey">
+                        <div class = "row">
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">OPERSYS</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">WEBAPDE</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">DISCTRU</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">SPSWENG</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">NETWORK</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">OBJECTP</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">INTRODB</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">DASALGO</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">COMPRO1</div>
+                            <div class = "col s4 btn waves-effect waves-light btn white-text">COMPRO2</div>
+                        </div>
+                    </div>
+                    
+                </li>
+              </ul>
+        </div>
+        <div class="col s9 center-wrapper">
+    <!--
+                <form> 
+                    <div class="input-field col s6" style = "padding-right: 100px">
+                        <input id="search" type="text" required>
+                        <label for="search"><i class="mdi-action-search"></i></label>
+                    </div>blue-grey
+                </form>
+    -->
+          
+        <div class = "row">
+                <div class="col s6 m6">
+                      <div class="card teal darken-1">
+                        <div class="card-content white-text center">
+                          <span class="card-title">OPERSYS</span>
+                      </div>
+                    </div>  
+                </div>
+                <div class="col s6 m6">
+                          <div class="card orange darken-1">
+                            <div class="card-content white-text center">
+                              <span class="card-title">Marc San Pedro</span>
+                      </div>
+                    </div>  
+                </div>
+            
+           <div class="row">
+      <div class="input-field col s12">
+        <i class="mdi-communication-messenger prefix"></i>
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Topic/Description</label>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class=" mdi-action-today prefix"></i>
+        <input type="date" class="datepicker">
+        <label for="date">Date</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+         <i class="mdi-action-account-circle prefix"></i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">Venue</label>
+      </div>
+    </div>
+    <div class = "row">
+        <div class = "col s4">
+        </div>
+        <div class = "col s4">
+        </div>
+        <div class = "col s4 right">
+            <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+                <i class="mdi-content-send right"></i>
+              </button>
+        </div>        
+    </div>        
+   
+            
+            </div>
+            </div>  
+        </div>
+        <div id="modal1" class="modal blue-grey white-text">
+        <div class="modal-content">
+          <h4>OPERSYS</h4>
+          <ul>
+            <li>Tutor:</li>
+            <li>Time:</li>
+            <li>Date:</li>
+            </ul>
+        </div>
+        <div class="modal-footer blue-grey">
+            <div id = "modal-row" class = "row center">
+                <div class = "col s4 left"> <a href="#" class=" orange waves-effect waves-light btn modal-action modal-close white-text">Close</a></div>
+                <div class = "col s4">  </div>
+                <div class = "col s4" style="float:right"> <a href="#" class=" teal waves-effect waves-light btn modal-action modal-close white-text">Join Session</a></div>
+            </div>
+          
+        
+        </div>
+      </div>
+    </body>
+    
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $(".button-collapse").sideNav({
+              menuWidth: 300, // Default is 240
+              edge: 'left', // Choose the horizontal origin
+              closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            });
+        });
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
+        
+          $(document).ready(function(){
+            $('.collapsible').sideNav("show");
+        });
+          $(document).ready(function(){
+            $('.collapsible').sideNav("hide");
+        });
+        
+//      var options = [
+//        {selector: '.card', offset: 200, callback: 'globalFunction()' },
+//      ];
+//      scrollFire(options);
+        
+        $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+        
+        $('.collapsible-header').click(function(){
+              $(".collapsible-header    ").removeClass("orange").addClass("teal"); // remove the prev pressed button class
+              $(this).removeClass("teal").addClass("orange");  
+        });
+        
+          $(document).ready(function(){
+            $('#modal1').openModal();
+          });
+        
+         $(document).ready(function(){
+            $('#modal1').closeModal();
+          });
+        
+        $('.modal-trigger').leanModal({
+              dismissible: true, // Modal can be dismissed by clicking outside of the modal
+              opacity: .5, // Opacity of modal background
+              in_duration: 300, // Transition in duration
+              out_duration: 200, // Transition out duration
+//              ready: function() { alert('Ready'); }, // Callback for Modal open
+//              complete: function() { alert('Closed'); } // Callback for Modal close
+            }
+          );
+      
+
+
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+          });
+
+        
+      
+      
+    </script>
+
+</html>
