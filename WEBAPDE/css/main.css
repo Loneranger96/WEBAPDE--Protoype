@@ -6,7 +6,7 @@ html,body{
     background: url(Wood.jpg) no-repeat center center fixed;
     background-size: cover;
 */
-    background: #e8e8e8;
+    background: url("Wood.jpg") fixed center center no-repeat;
 }
 
 .contentdiv
@@ -372,4 +372,15 @@ html,body{
     min-width: 1200px !important;
     margin: 0 auto !important;
     padding-left: 80px !important;
+}
+
+#scrollable-panel {
+	margin: 50px;
+	padding-top: 55px;
+}
+
+.fixed-nav {
+	position: fixed;
+	margin-top: -50px !important;
+	z-index: 1;
 }
